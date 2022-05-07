@@ -1,0 +1,11 @@
+<p>home-page works!</p>
+
+<div>
+    {{userService.getUserData() |json}}
+</div>
+
+<button (click)="logout()">LOGOUT</button>
+<button (click)="test()">FETCH</button>
+<button (click)="checkValid()">CHECK TOKEN VALIDITY</button>
+<button (click)="clear()">CLEAR</button>
+<div *ngIf="data !== null">{{data | json}}</div>
